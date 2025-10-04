@@ -1,0 +1,50 @@
+:root{
+--bg:#0f1724;
+--card:#0b1220;
+--muted:#9aa4b2;
+--accent:#2563eb;
+--danger:#ef4444;
+--glass: rgba(255,255,255,0.02);
+}
+
+
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial;margin:0;background:linear-gradient(180deg,#071029, #071b2b);color:#e6eef6;min-height:100vh}
+.app-container{display:flex;flex-direction:column;min-height:100vh}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:rgba(0,0,0,0.14);backdrop-filter:blur(6px)}
+.logo{margin:0;font-size:1.25rem}
+.nav-link{color:var(--muted);margin-left:12px;text-decoration:none}
+.nav-link.primary{background:var(--accent);padding:8px 12px;border-radius:8px;color:white;margin-left:16px}
+.main{flex:1;padding:24px}
+.footer{text-align:center;padding:12px;color:var(--muted);font-size:12px}
+
+
+.page{max-width:1100px;margin:0 auto}
+.page-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.btn{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.danger{background:var(--danger)}
+.empty{padding:48px;text-align:center;color:var(--muted);background:var(--glass);border-radius:10px}
+
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;display:flex;flex-direction:column;justify-content:space-between}
+.card-body{margin-bottom:12px}
+.name{margin:0 0 6px 0}
+.meta{color:var(--muted);font-size:13px}
+.addr{margin-top:8px;color:#d7e6f3}
+.card-actions{display:flex;gap:8px}
+
+
+.form-card{max-width:640px;margin:0 auto;background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+form label{display:block;margin-bottom:12px}
+input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.error{color:var(--danger);font-size:13px;margin-top:6px}
+.form-actions{display:flex;gap:8px;margin-top:12px}
+
+
+@media (max-width:600px){
+.nav{padding:12px}
+.page{padding:0 12px}
+}
