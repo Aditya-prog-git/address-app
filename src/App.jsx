@@ -27,7 +27,7 @@ export default function App() {
       </main>
 
 
-      <footer className="footer">Built with slightly less chaos than usual.</footer>
+      <footer className="footer">Address-App</footer>
     </div>
   );
 }

@@ -17,7 +17,7 @@ return (
 
 
       {addresses.length === 0 ? (
-      <div className="empty">No addresses yet. Go add one. Yes, you.</div>
+      <div className="empty">Please Add Address Here</div>
       ) : (
         <div className="grid">
           {addresses.map(a => (

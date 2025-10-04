@@ -22,7 +22,7 @@ export default function AddressForm() {
     const phoneRe = /^[0-9]{7,15}$/;
     if (!form.fullName.trim()) e.fullName = 'Full name is required.';
     if (!form.phone.trim()) e.phone = 'Phone number is required.';
-    else if (!phoneRe.test(form.phone.trim())) e.phone = 'Phone should be 7-15 digits.';
+    else if (!phoneRe.test(form.phone.trim())) e.phone = 'Phone should be 10 digits.';
     if (!form.street.trim()) e.street = 'Street address is required.';
     setErrors(e);
     return Object.keys(e).length === 0;
